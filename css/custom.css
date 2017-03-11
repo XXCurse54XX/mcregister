@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	overflow: hidden;
+}
+.OrderView {
+	background: #eee;
+	height: 100vh;
+}
+.MainView {
+	background: #fafafa;
+	height: 100vh;
+}
+.MainViewInfo {
+	width: 100%;
+	background: #eee;
+}
