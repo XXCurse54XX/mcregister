@@ -1,7 +1,10 @@
 var total = 0;
-alert(total);
 
-function Buy(item){
+function AddToCard(item) {
+  var cart = ["test" + item];
+}
+
+function Buy(order){
   var price = item.price;
   total += item.price;
   alert(total);
