@@ -15,3 +15,8 @@ body {
 	width: 100%;
 	background: #eee;
 }
+.total{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}

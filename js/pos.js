@@ -1,11 +1,13 @@
 var total = 0;
 
-function AddToCard(item) {
-  var cart = ["test" + item];
+function roundHundred(value){
+  return Math.ceil(value * 100) / 100;
 }
 
-function Buy(order){
+function Buy(item){
   var price = item.price;
+  var name = item.name;
   total += item.price;
-  alert(total);
+  total = (roundHundred(total));
+  document.getElementById("TotalNoTax").innerHTML = total.toFixed(2);
 }
