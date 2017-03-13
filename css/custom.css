@@ -8,8 +8,10 @@ body {
 	height: 100vh;
 }
 .MainView {
-	background: #fafafa;
 	height: 100vh;
+	background-image: url("../images/bg_main.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .MainViewInfo {
 	width: 100%;
@@ -19,4 +21,19 @@ body {
 	position: fixed;
 	bottom: 0;
 	left: 0;
+}
+.object {
+
+}
+.object img {
+	width: 90px;
+	height: 90px;
+}
+.objectZone td {
+	height: 90px;
+	width: 90px;
+}
+#printOrder {
+	margin-top: 100px;
+	padding: 5px;
 }

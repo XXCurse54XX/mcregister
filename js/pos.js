@@ -6,8 +6,9 @@ function roundHundred(value){
 
 function Buy(item){
   var price = item.price;
-  var name = item.name;
   total += item.price;
+  var fullPrice = (roundHundred(price));
   total = (roundHundred(total));
   document.getElementById("TotalNoTax").innerHTML = total.toFixed(2);
+  $('#printOrder').append("<li>" + item.name + "&nbsp;" +fullPrice.toFixed(2) + "</li>");
 }
