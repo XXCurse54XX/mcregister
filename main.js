@@ -13,7 +13,7 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1920, height: 1200, fullscreen: false, title: "Mcdonalds Register", kiosk: false, titleBarStyle: "hidden"})
+  mainWindow = new BrowserWindow({width: 1300, height: 1200, fullscreen: false, title: "Mcdonalds Register", kiosk: false, titleBarStyle: "hidden"})
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
