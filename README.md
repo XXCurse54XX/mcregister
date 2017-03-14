@@ -5,4 +5,4 @@ Goal: Replicate the McDonald's POS System (no cashless) to help learn node.js w/
 
 
 ## Example POS
-[img]https://github.com/jamslatt/mcregister/images/forGit_del_inuse/register.jpg[/img]
+![McDonalds POS System](https://raw.githubusercontent.com/jamslatt/mcregister/master/images/forGit_del_inuse/register.jpg)
