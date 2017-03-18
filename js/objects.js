@@ -1,14 +1,9 @@
-var BigMac = {
-  id: 1,
-  name:"Big Mac",
-  price: 5.40,
-  mealprice: 8.20,
-  quantity: 0
-};
-var ChsBurger = {
-  id: 2,
-  name:"Cheese Burger",
-  price: 2.79,
-  mealprice: 5.21,
-  quantity: 0
-};
+function sandwich(name, price, quantity, meal) {
+  this.name = name;
+  this.price = price;
+  this.quantity = quantity;
+  this.meal = meal;
+}
+
+var BigMac = ["Big Mac", 5.40, 1, false];
+var ChsBurger = ["Cheese Burger", 2.75, 1, false];
