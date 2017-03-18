@@ -7,14 +7,20 @@ function roundHundred(value){
 
 function Buy(item){
   item.quantity = item.quantity + 1;
-  uid = uid + 1;
+  if(!(item.quantity > 1 )){
+    // If there is more than one item, do not assign new uid
+    uid = uid + 1;
+  }
+  else {
+    uid = uid;
+  }
   var price = item.price;
   total += item.price;
   var fullPrice = (roundHundred(price));
   total = (roundHundred(total));
   document.getElementById("TotalNoTax").innerHTML = total.toFixed(2);
   if(!(item.quantity > 1)){
-    $('#printOrder').append("<li class='InCartObject'>x<span class='itmQt'>" + item.quantity + "</span> " + item.name + uid + "<span class='costBox' style='float: right;'>" + fullPrice.toFixed(2) + "</span></li>");
+    $('#printOrder').append("<li class='InCartObject' id='" + item.id + "'>x<span class='itmQt'>" + item.quantity + "</span> " + item.name + "<span class='costBox' style='float: right;'>" + fullPrice.toFixed(2) + "</span></li>");
   }
   else {
       $('.itmQt').html(item.quantity);
@@ -25,18 +31,10 @@ function Buy(item){
   // Add selected class to the Item when you click
   $('li').click(function(){
     $(this).toggleClass('SelectedInCart');
-    $('.voidBtn').click(function removeItem(uid){
-      // Add del sequence
+    $('.voidBtn').click(function removeItem(){
+      var rmItem = $('.SelectedInCart').id;
+      
+      $('.SelectedInCart').hide();
     });
   });
 }
-
-
-//On Click Event for Items in cart
-// Not Working
-
-
-// Void Line
-function VoidLine(item) {
-  // space
-};
