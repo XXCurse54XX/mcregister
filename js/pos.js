@@ -1,6 +1,7 @@
 var total = 0;
 var qt = 1;
 var price = 0;
+var orderOpen = true;
 
 function roundHundred(value){
   return Math.ceil(value * 100) / 100;
@@ -10,6 +11,15 @@ function getQt(number) {
   qt = number;
   // add clar qt box
 }
+/*var time = 1;
+setInterval(function timeElapsed() {
+    time
+}, 1000);
+
+
+$('body').click(function(){
+  timeElapsed();
+});*/
 
 function Buy(item){
   var burger = new sandwich(item[0], item[1], qt, item[3]); // Get item and construct burger
@@ -35,6 +45,6 @@ function Buy(item){
     document.getElementById("TotalNoTax").innerHTML = total.toFixed(2);
     $('#printOrder').append("<li class='InCartObject' >x" + burger.quantity + " " + burger.name + "</li>");
   }
-   
-  
+
+
 }
